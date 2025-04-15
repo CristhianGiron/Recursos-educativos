@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>💻 Simulaciones digitales | Fotografías y cuentos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="author" content="Mª Teresa Neira González y Pablo Nimo Liboreiro para Cedec" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-9"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">Fotografías y cuentos</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Soporte Técnico: Electrónica Básica</a></li>
+   <li><a href="evaluacin_diagnostica.html" class="no-ch">Evaluación diagnostica</a></li>
+   <li class="current-page-parent"><a href="contenido.html" class="current-page-parent daddy">Contenido</a>
+   <ul>
+      <li><a href="que_es_la_electrnica.html" class="no-ch">¿Que es la electrónica?</a></li>
+      <li><a href="historia_de_la_eletrnica.html" class="no-ch">Historia de la eletrónica</a></li>
+      <li><a href="_componentes_electrnicos.html" class="no-ch">🔌 Componentes electrónicos</a></li>
+      <li><a href="_electrnica_analgica_y_digital.html" class="no-ch">⚙️ Electrónica analógica y digital</a></li>
+      <li><a href="_prototipado_y_prcticas_experimentales.html" class="no-ch">🧪 Prototipado y prácticas experimentales</a></li>
+      <li id="active"><a href="_simulaciones_digitales.html" class="active no-ch">💻 Simulaciones digitales</a></li>
+      <li><a href="_lectura_e_interpretacin_de_esquemas_electrnicos.html" class="no-ch">🖉 Lectura e interpretación de esquemas electrónicos</a></li>
+      <li><a href="_leyes_bsicas_de_la_electrnica.html" class="no-ch">📐 Leyes básicas de la electrónica</a></li>
+      <li><a href="_sistemas_elctricos_vs_electrnicos.html" class="no-ch">⚡ Sistemas eléctricos vs. electrónicos</a></li>
+   </ul>
+   </li>
+   <li><a href="ficha_pedaggica.html" class="no-ch">Ficha pedagógica</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="_prototipado_y_prcticas_experimentales.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="_lectura_e_interpretacin_de_esquemas_electrnicos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">💻 Simulaciones digitales</h1></div>
+<div class="iDevice_wrapper textIdevice" id="id107">
+<div class="iDevice emphasis0" >
+<div id="ta107_1287_2" class="block iDevice_content">
+<div class="exe-text"><p>🧪 Actividad: Semáforo con Arduino en Tinkercad<br />🎯 Objetivo:<br />Aprender a conectar y programar un circuito básico con Arduino simulando un semáforo de tres luces (rojo, amarillo y verde) usando LEDs.</p>
+<p><br />🧰 Materiales virtuales en Tinkercad:<br />1 x Arduino UNO<br />3 x LEDs (rojo, amarillo, verde)<br />3 x resistencias de 220 ohmios<br />1 x protoboard<br />Cables de conexión<br /><br />🛠️ Instrucciones:<br />Abrir Tinkercad Circuits y crear un nuevo proyecto.<br />Arrastrar el Arduino UNO y una protoboard al área de trabajo.<br />Colocar los tres LEDs en la protoboard (en serie con resistencias).<br />Conectar los LEDs a los pines digitales del Arduino:</p>
+<p>Rojo → pin 13<br />Amarillo → pin 12<br />Verde → pin 11<br />Completar las conexiones a GND con cables.<br />Abrir el editor de código y pegar este ejemplo:<br />cpp<br />Copiar código<br />void setup() {<br />pinMode(13, OUTPUT); // Rojo<br />pinMode(12, OUTPUT); // Amarillo<br />pinMode(11, OUTPUT); // Verde<br />}</p>
+<p>void loop() {<br />digitalWrite(13, HIGH); // Rojo<br />delay(3000);<br />digitalWrite(13, LOW);<br /><br />digitalWrite(12, HIGH); // Amarillo<br />delay(1000);<br />digitalWrite(12, LOW);</p>
+<p>digitalWrite(11, HIGH); // Verde<br />delay(3000);<br />digitalWrite(11, LOW);<br />}</p>
+<p>Simular el circuito y observar el comportamiento de los LEDs como un semáforo real.<br /><br />📚 Extensiones sugeridas:<br />Agregar un botón para activar o detener el semáforo.<br />Simular un cruce peatonal con otro juego de LEDs.<br />Usar una pantalla LCD para mostrar mensajes como "Espere" o "Cruce".<br /><br />✅ Aprendizajes esperados:<br />Comprender el uso de pines digitales.<br />Manejar el control secuencial con delay() y digitalWrite().<br />Conectar componentes en protoboard de forma lógica.</p></div>
+</div>
+</div>
+</div>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="_prototipado_y_prcticas_experimentales.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="_lectura_e_interpretacin_de_esquemas_electrnicos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>
